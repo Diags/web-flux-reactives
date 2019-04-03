@@ -15,7 +15,7 @@
         <!--/*@thymesVar id="societes" type="java.util.List<agixis.client.app.webfluxreactive.entities.Societe>"*/-->
         <tr th:each="s:${societes}">
             <td th:text="${s.id}"></td>
-            <td th:text="${s.name}"></td>
+            <td th:text="${s.nom}"></td>
             <td th:text="${s.price}"></td>
             <td>
                 <button class="btn btn-primary" th:attr="onclick=|onConnect(this,'${s.id}')|" >Transaction</button>
